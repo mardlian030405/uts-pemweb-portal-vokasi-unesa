@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="#">
+              <h1>SEPUTAR VOKS</h1>
+            </a>
+          </div>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+
+          <!-- Hamburger Menu Icon -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="article-container">
+      <h1>
+        Web 3.0: Teknologi yang Akan Mengubah Cara Kita Berinteraksi dengan
+        Internet
+      </h1>
+      <img
+        src="https://statik.unesa.ac.id/terapan-ti/thumbnail/1b1d9167-bd4a-4e6e-b5a9-3a1afe7f2071.jpg"
+        alt="Gambar Artikel"
+        class="article-image"
+      />
+      <p>
+        Web 3.0 adalah generasi ketiga dari World Wide Web, yang saat ini sedang
+        dalam proses pengembangan. Web 3.0 akan menjadi lebih cerdas dan
+        responsif, dengan kemampuan untuk memahami dan memproses informasi
+        dengan cara yang lebih mirip dengan manusia.
+      </p>
+      <p>
+        Web telah berkembang melalui beberapa generasi: Web 1.0 (1989-2005): Web
+        statis, dengan konten yang dibuat oleh beberapa orang dan tidak ada
+        interaksi antara pengguna. Web 2.0 (2005-sekarang): Web dinamis, dengan
+        konten yang dibuat oleh pengguna dan interaksi antara pengguna. Web 3.0
+        (masa depan): Web yang lebih cerdas dan responsif, dengan kemampuan
+        untuk memahami dan memproses informasi dengan cara yang lebih mirip
+        dengan manusia.
+      </p>
+      <p>
+        Beberapa fitur utama Web 3.0 adalah: Desentralisasi: Web 3.0 akan
+        menggunakan teknologi blockchain untuk memungkinkan desentralisasi data
+        dan aplikasi. Kecerdasan Buatan (AI): Web 3.0 akan menggunakan AI untuk
+        memproses dan memahami informasi dengan cara yang lebih mirip dengan
+        manusia. Pembelajaran Mesin (ML): Web 3.0 akan menggunakan ML untuk
+        memungkinkan aplikasi belajar dari data dan meningkatkan kinerja.
+        Blockchain: Web 3.0 akan menggunakan blockchain untuk memungkinkan
+        desentralisasi data dan aplikasi.
+      </p>
+      <p>
+        Manfaat Web 3.0 Beberapa manfaat Web 3.0 adalah: Lebih banyak kontrol
+        atas data pribadi: Web 3.0 akan memungkinkan pengguna memiliki lebih
+        banyak kontrol atas data pribadi mereka. Lebih banyak keamanan: Web 3.0
+        akan menggunakan teknologi blockchain untuk memungkinkan keamanan yang
+        lebih baik. Lebih banyak kemampuan: Web 3.0 akan memungkinkan aplikasi
+        yang lebih cerdas dan responsif.
+      </p>
+      <a href="index.html" class="artikel-button">Back Home</a>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <h2 class="footer-title">PORTAL INFORMASI SEPUTAR VOKASI</h2>
+          <p class="footer-description">
+            OFFICIAL WEBSITE PORTAL INFORMASI SEPUTAR VOKASI
+          </p>
+          <a href="https://vokasi.unesa.ac.id/" class="footer-button"
+            >Official website</a
+          >
+        </div>
+
+        <div class="footer-links">
+          <ul class="link-list">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" target="_blank" aria-label="Facebook">Facebook</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
+            </li>
+            <li><a href="#" target="_blank" aria-label="GitHub">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleReadMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readMoreBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Baca Selengkapnya";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Tampilkan Lebih Sedikit";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
