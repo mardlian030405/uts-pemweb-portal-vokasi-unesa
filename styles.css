@@ -137,8 +137,16 @@ main {
 
 /* Background Styling */
 .section-background {
-  background-color: rgb(220, 220, 224);
+  background-image: url(https://www.unesa.ac.id/images/foto-15-01-2019-09-07-28-7836.png);
   padding: 8rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 /* Content Centering */
@@ -219,7 +227,7 @@ main {
   padding: 0.75rem 3rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: rgb(9, 14, 77);
+  color: rgb(82, 12, 194);
   text-align: center;
   border-radius: 0.375rem;
   border: 1px solid transparent;
@@ -265,7 +273,7 @@ main {
 
 .artikel article img {
   width: 100%;
-  height: auto;
+  height: 250px;
   display: block;
 }
 
@@ -449,23 +457,119 @@ p {
   text-align: left;
 }
 
-.contact-icons {
+.container-card {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.icon {
-  text-align: center;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 
-.icon i {
-  font-size: 36px;
-  color: #007bff;
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  width: 200px;
 }
 
-.icon p {
-  margin-top: 5px;
-  font-size: 16px;
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.container-tim {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Team Member Card */
+.team-member {
+  background-color: #ffffff; /* bg-white */
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  width: 20rem; /* w-80 */
+  text-align: center;
+  margin: 1rem;
+}
+
+.team-member img {
+  width: 6rem; /* w-24 */
+  height: 6rem; /* h-24 */
+  border-radius: 9999px; /* rounded-full */
+  margin: 0 auto;
+}
+
+.team-member h2 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  margin-top: 1rem; /* mt-4 */
+}
+
+.team-member p {
+  color: #718096; /* text-gray-600 */
+  margin-top: 0.5rem;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* mt-4 */
+  gap: 1rem; /* space-x-4 */
+}
+
+.social-links a {
+  font-size: 2rem; /* fa-2x equivalent */
+  text-decoration: none;
+}
+
+.social-links a.instagram {
+  color: #e1306c; /* Instagram color */
+}
+
+.social-links a.whatsapp {
+  color: #25d366; /* WhatsApp color */
+}
+
+.social-links a.github {
+  color: #333333; /* GitHub color */
+}
+
+.social-links a.facebook {
+  color: #1877f2; /* Facebook color */
+}
+
+.social-links a.twitter {
+  color: #1da1f2; /* Twitter color */
+}
+
+/* Flexbox layout for team members */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* gap-8 */
 }
