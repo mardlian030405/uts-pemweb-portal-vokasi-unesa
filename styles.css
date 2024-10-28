@@ -1,25 +1,21 @@
-/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Gaya untuk body */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f2f5;
   color: #333;
 }
 
-/* Gaya container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Gaya untuk header */
 .header {
   background-color: rgb(9, 14, 77);
   border-bottom: 1px solid #e5e7eb;
