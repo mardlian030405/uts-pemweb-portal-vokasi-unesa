@@ -43,7 +43,12 @@
           </p>
 
           <div class="button-group">
-            <a class="btn-primary" style="text-decoration: none" href="#blog">
+            <a
+              class="btn-primary"
+              onclick="openPopup()"
+              style="text-decoration: none"
+              href="#blog"
+            >
               Get Started
             </a>
 
@@ -58,6 +63,32 @@
         </div>
       </div>
     </section>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <!-- Close Icon SVG -->
+        <svg
+          class="close"
+          onclick="closePopup()"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6 6L18 18M6 18L18 6"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <h2>Selamat Datang Voks!</h2>
+        <p>
+          Temukan informasi lengkap seputar program vokasi Universitas Negeri
+          Surabaya yang dirancang untuk mempersiapkan lulusan siap kerja dengan
+          keterampilan praktis dan relevan dengan industri terkini.
+        </p>
+        <button onclick="closePopup()">Tutup</button>
+      </div>
+    </div>
     <main>
       <div id="blog" class="container">
         <section class="artikel">
@@ -281,5 +312,14 @@
         </div>
       </div>
     </footer>
+    <script>
+      function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
   </body>
 </html>
